@@ -1,3 +1,5 @@
+ï»¿#encoding : utf-8
+
 require 'binding_of_caller'
 
 OverrideDefaultGlobals ||= false
@@ -35,7 +37,7 @@ at_exit do
     File.write ".globals", Marshal.dump(globals)
   end
 
-  # ½ºÅÃ ÇÁ·¹ÀÓÀ» ºĞ¸®ÇÏ±â À§ÇØ ¸Ş¼Òµå ¸¸µé¾î¼­ Äİ
+  # ìŠ¤íƒ í”„ë ˆì„ì„ ë¶„ë¦¬í•˜ê¸° ìœ„í•´ ë©”ì†Œë“œ ë§Œë“¤ì–´ì„œ ì½œ
   wrap
 end
 
